@@ -1,0 +1,276 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+       <style>
+        .section1{
+            background:linear-gradient(to bottom left,white,black);
+            width:auto;
+            height:auto;
+          
+        }
+        .fontdesign{
+            
+           padding-top: 100px;
+           font-size: 80px;
+           font-family: cursive;
+           color:#fff ;
+           text-shadow: 10px 5px black;
+        }  
+        .section2{
+            background:linear-gradient(to bottom left,black,white);
+            width:auto;
+            height:auto;
+        }
+        .templateimage{
+            width:400px;
+            height:200px;
+           
+            box-shadow: 5px  7px 7px black;
+            
+        }
+        .pera{
+            font-size: 30px;
+            font-family: fantasy;
+            width: 550px;
+            height:420px;
+            
+            text-align: center;
+            padding:10px;
+        }
+        .leftdiv{
+            font-size: 30px;
+            font-family: fantasy;
+            width: 500px;
+            height:250px;
+            margin-right: 50px;
+            
+            text-align: center;
+           
+        }
+        .rightdiv{
+            font-size: 30px;
+            font-family: fantasy;
+            width: 500px;
+            height:250px;
+            margin-left: 50px;
+           
+            text-align: center;
+           
+        }
+        .div_image{
+            display: flex;
+            margin:auto;
+            width: 1000px; 
+            height: 500px;
+            margin-top: 30px;
+            flex-wrap: wrap;  
+           
+        }
+        .image{
+            flex-direction: row;
+            margin:auto;
+            width: 400px; 
+            height:200px ;    
+                
+            
+        }
+        .section_1div{
+            display: flex;
+            flex-direction: row;
+            padding:60px;
+            margin-top:100px;
+            flex-wrap:wrap
+            
+        }
+        .button{
+
+            background-color:cyan;
+            border-radius:10px;
+            padding:3px;
+            font-size:25px;
+            width:200px;
+            margin-right:10px;
+            margin-bottom:20px
+        }
+        @media screen  and (max-width:700px){
+
+            .section1{
+                background:linear-gradient(to bottom left,white,grey);
+                width:auto;
+                height:auto;
+              
+            }
+            .fontdesign{
+                
+               padding-top: 100px;
+               font-size: 60px;
+               font-family: cursive;
+               color:#fff ;
+               text-shadow: 10px 5px black;
+            }  
+            .section2{
+                background:linear-gradient(to bottom left,grey,white);
+                width:auto;
+                height:auto;
+            }
+            .templateimage{
+                width:400px;
+                height:200px;
+                box-shadow: 5px  7px 5px black;
+               
+              
+            }
+            .pera{
+                font-size: 20px;
+                font-family: fantasy;
+                width: 400px;
+                height:270px;
+                margin:auto;
+                display:inline-flex;
+                margin-top: 
+                10px;
+                
+                margin-bottom: 20px;
+    
+            }
+            .leftdiv{
+                font-size: 20px;
+                font-family: fantasy;
+                width: 400px;
+                height:100px;
+                margin-right: 10px;
+                margin:auto;
+                display:inline-flex;
+               
+            }
+            .rightdiv{
+                font-size: 20px;
+                font-family: fantasy;
+                width: 400px;
+                height:100px;
+                
+                margin:auto;
+                display:inline-flex;
+               
+
+            } 
+            .section_1div{
+                margin: auto;
+                text-align: center;
+                display: flex;
+                width:500px;
+                padding:60px;
+                margin-top:50px;
+                
+              
+            }
+            .div_image{
+                display: flex;
+                margin:auto;
+                width: 600px; 
+                margin-top: 30px;
+                flex-wrap: wrap;
+                
+                justify-content: center;
+                padding-right: 70px;
+                padding-left: 15px;
+                height: auto;
+                
+            }
+            .image{
+                padding-left: 15px;
+                margin:auto;
+                width: 400px;
+                margin-top: 10px;
+                margin-bottom: 20px;
+               
+                
+            }
+            .button{
+                background-color:cyan;
+                border-radius:10px;
+                padding:3px;
+                font-size:25px;
+                width:200px;
+                margin-bottom: 20px;
+                margin-left: 20px;
+            }
+        }
+
+       </style>
+    </head>
+    <body>
+          <!-- navbar -->
+          <div>
+            <nav class="navbar navbar-expand-lg bg-dark ">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white" href="#">Mycertificate</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                     </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                            <a class="nav-link text-white" href="#template">template</a>
+                            <!-- <a class="nav-link text-white" href="home/{{i.id}}">hello</a>
+                            <a class="nav-link text-white" href="home/">hello</a>  -->
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </div>
+        <!-- section -->
+        <div>
+            <section class="section1" id="top">
+                <center><h1 class="fontdesign">create your own certificate</h1></center>
+               <div class="section_1div">
+                    <div class="leftdiv">“Live as if you were to die tomorrow. Learn as if you were to live forever.”
+
+                    ― Mahatma Gandhi</div>
+                    <div> <center><p class="pera">Give people the recognition they deserve with a professionally-designed certificate from mycertificate. Whether you’re awarding an employee for their loyalty and service or acknowledging a speaker who has imparted their expertise during a talk, give them a beautifully designed certificate to remember.</p></center></div>
+             
+                    <div class="rightdiv"> “Tell me and I forget, teach me and I may remember, involve me and I learn.”
+
+                    – Benjamin Franklin</div>
+               </div>
+                <div >
+                    <center><a href="#template"><button class="button"><b>let's create</b></button></a></center>
+                </div>
+
+            </section>
+
+            <section class="section2" id="template">
+                <center><h1 class="fontdesign">choose template</h1></center>
+
+
+            <!-- template image for certificate-->
+                <div class="div_image" >
+                    {%for i in data%}
+                    <div class="image">
+                       <a href="fillform/{{i.id}}"><img src="{{i.file.url}}" class="templateimage" alt=""></a>
+                    </div>
+                    {%endfor%}
+                </div>
+              
+            </section>
+
+
+
+            
+        </div>
+        <div>
+            <div class="card">
+                <div class="card-header bg-black text-white">
+                  Featured
+                </div>
+                <div class="card-body bg-dark">
+                  <h5 class="card-title text-white">Special title treatment</h5>
+                  <p class="card-text text-white">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#top" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+    </body>
+</html>

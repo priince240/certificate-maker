@@ -1,0 +1,53 @@
+{%load static%}
+<html>
+    <head>
+        <style>
+            .size{
+                font-size: 30px;
+            }
+            .outer{
+                margin: auto;
+                width:420px;
+                height:600px;
+                margin-top:10px;
+                border: 17px  black;
+                border-style: double;
+                padding-left: 30px;
+                padding-top: 30px;
+                background-color: rgb(159, 168, 175, 0.25)  ;
+                
+                
+            }
+            .image{
+                width:300px;
+                height:100px;
+                padding-right: 10px;
+            }
+            .size{
+                width: 300px;
+            }
+        </style>
+    </head>
+    <body style="background:linear-gradient(to bottom right,white,black);">
+        <div><center style="font-family: cursive; font-size:60px; margin-top:100px">FILL THE  FORM</center></div>
+     <div class="outer">
+          
+        <form action="{%url 'hello' data.id%}" method="post" enctype="multipart/form-data">
+            {%csrf_token%}
+            <center><label name="fileup"><img src="{{data.file.url}}" class="image" alt=""></label></center><br><br>
+            <label class="size"><b><i>Name :</i></b></label>
+             <input type="text" class="size" name="name" style="background:transparent"><br><br><br>
+            <label  class="size"><b><i>Course :</i></b></label>
+             <input type="text" class="size" name="course" style="background:transparent"><br><br><br>
+            <label class="size"><b><i>Date :</i></b></label>
+             <input type="date" class="size" name="date" style="background:transparent"><br><br><br>
+             <label class="size"><b><i>Upload your sign :</i></b></label>
+             <input type="file" class="size" name="sign" style="background:transparent"><br><br><br>
+             <button type="submit">send</button>
+        </form> 
+       
+
+     </div>
+
+    </body>
+</html>

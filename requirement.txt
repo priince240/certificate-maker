@@ -1,0 +1,35 @@
+urls----
+--------------for browserable api--------------------
+--For accesstoken = http://127.0.0.1:8000/accesstoken
+--For refreshtoken = http://127.0.0.1:8000/refreshtoken
+--For verifytoken = http://127.0.0.1:8000/verfytoken
+--For getdata = http://127.0.0.1:8000/getdata/   
+--For User Signin = http://127.0.0.1:8000/signin
+--Signin in json format eg:={"name": "",
+                             "email": "",
+                             "password": "",
+                             "password2":""} 
+
+--For User Login = http://127.0.0.1:8000/login
+--Login in json format eg:={ 
+                            "email": "",
+                            "password": ""}
+
+
+--------------------In CMD [curd operation]--------------------------
+first install : pip install httpie
+
+then run the following command to test all apis with sample data----:
+
+For gettoken:- http POST http:/127.0.0.1:8000/accesstoken/ email="aman@gmail.com" password="12345"
+
+For refreshtoken:- http http:/127.0.0.1:8000/refreshtoken/ refresh=" --------token-------"
+
+To Verify token :- http http:/127.0.0.1:8000/verfytoken/ token="--------token----------"
+
+TO get data :- http get http://127.0.0.1:8000/list/api/ Authorization: "Bearer ---------------token-----------"
+
+TO update data :- http PATCH http://127.0.0.1:8000/list/api/id/ name=aman course=designer Authorization: "Bearer ---------------token-----------"
+
+
+
